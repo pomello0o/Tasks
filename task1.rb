@@ -21,6 +21,7 @@ def is_whole(x)
     (x - x.floor) == 0 ? true : false
 end
 
+=begin
 def factorial(n)
     res = 1
     while n > 0
@@ -29,6 +30,12 @@ def factorial(n)
     end
     res
 end
+=end
+
+def factorial(n)
+    return 1 if (n <= 1)
+    return n * factorial(n - 1)
+end
 
 
-puts am_I_Wilson(5)
+puts am_I_Wilson(4)
