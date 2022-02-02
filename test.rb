@@ -1,7 +1,2 @@
-
-def factorial(n)
-    return 1 if (n <= 1)
-    return n * factorial(n - 1)
-end
-
-puts factorial(563)
+arr = [1,2,3,4,5]
+puts arr.reduce {|sum, x| sum + x}
