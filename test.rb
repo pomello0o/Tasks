@@ -1,16 +1,17 @@
-def stockList(listOfArt, listOfCat)
-    return "" if listOfArt.empty? or listOfCat.empty?
-    listOfCat.each do |category| 
-        z = 0
-        listOfArt.each do |code|
-            z += code.split(" ")[-1].to_i if code.start_with? category
-        end
-        (category <<  " : #{z})").prepend("(")
-    end
-    listOfCat.join(" - ")
+def perimeter(n)
+    (0..(n+1)).reduce {|sum, x| sum + 4 * fib(x)}
+    #return 4 * 1 if n == 0
+    #return 4 * fib(n + 1) + perimeter(n - 1)
 end
 
-b = ["ABAR 200", "CDXE 500", "BKWR 250", "BTSQ 890", "DRTY 600"]
-c = ["A", "B"]
+def fib(k)
+    a, b = 0, 1;
+    return a if k == 0
+    for i in (2..k)
+        c = a + b
+        a, b = b, c
+    end
+    return b
+end
 
-puts stockList(b,c)
+puts perimeter(3)
