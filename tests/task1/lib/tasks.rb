@@ -1,0 +1,1 @@
+require_relative 'tasks/task1.rb'

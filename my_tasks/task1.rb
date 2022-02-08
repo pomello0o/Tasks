@@ -28,5 +28,5 @@ def factorial(n)
     return n * factorial(n - 1)
 end
 
-(1..6).each  {|x| puts am_I_Wilson(x)}
+(1..6).each { |x| puts am_I_Wilson(x) }
 puts am_I_Wilson(563)

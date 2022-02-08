@@ -5,6 +5,6 @@ def new_avg(arr, newavg)
     donation.ceil
 end
 
-arr = []
+arr = [1,2,4]
 
 puts new_avg(arr, 5)
