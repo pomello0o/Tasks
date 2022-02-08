@@ -1,1 +1,5 @@
 require_relative 'tasks/task1.rb'
+require_relative 'tasks/task2.rb'
+require_relative 'tasks/task3.rb'
+require_relative 'tasks/task4.rb'
+require_relative 'tasks/task5.rb'
